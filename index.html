@@ -127,6 +127,67 @@
         </div>
       </section>
       <!-- END PRICING -->
+
+      <!-- CALCULATOR -->
+      <section id="calculator" class="section-container">
+        <header class="section-header">
+          <h3 class="section-title">Workload Estimator</h3>
+          <p class="section-subtitle"></p>
+        </header>
+        <form action="#" method="post" class="section-form">
+          <div class="form-panel">
+            <label for="node-count" class="form-label"
+              >Node Count<span class="required-mark">*</span></label
+            >
+            <input
+              type="number"
+              name="node-count"
+              id="node-count"
+              class="form-input"
+              min="100"
+              max="10000"
+              step="50"
+              placeholder="5000"
+              required
+            />
+            <span class="input-desc">Min: 100 | Max: 10000</span>
+          </div>
+
+          <div class="form-panel">
+            <label for="log-throughput" class="form-label"
+              >Log Throughput<span class="required-mark">*</span></label
+            >
+            <input
+              type="number"
+              name="log-throughput"
+              id="log-throughput"
+              class="form-input"
+              min="100"
+              max="10000"
+              step="50"
+              placeholder="5000"
+              required
+            />
+            <span class="input-desc">Min: 100 | Max: 10000</span>
+          </div>
+
+          <div class="form-panel">
+            <label for="target-tier" class="form-label"
+              >Target Tier<span class="required-mark">*</span></label
+            >
+            <select name="target-tier" id="target-tier" class="form-label">
+              <option value="developer">Developer</option>
+              <option value="pro-cluster">Pro Cluster</option>
+              <option value="enterprise-dedicated">Enterprise Dedicated</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-submit">
+            Verify Tier Compatibility
+          </button>
+        </form>
+      </section>
+
+      <!-- END CALCULATOR -->
     </main>
   </body>
 </html>
