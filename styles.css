@@ -1,1 +1,30 @@
 /* style.css */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #ff9f1c;
+  --primary-color-hover: #f58a07;
+  --secondary-color: #0094c6;
+  --secondary-color-hover: #133c55;
+  --bg-color: #303633;
+  --panel-color: #111827;
+  --text-color: #eef0f2;
+  --font-family:
+    -apple-system, BlinkMacSystemFront, "Segoe UI", Arial, sans-serif;
+  --transition-speed: 0.2s;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
