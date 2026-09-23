@@ -11,15 +11,16 @@
   <body>
     <header class="site-header">
       <a href="#" class="site-logo" aria-label="DevPulse Home Page">
-        <span class="logo-icon">&#1422;</span> DevPulse
+        <span class="site-logo-icon">&#1422;</span> DevPulse
       </a>
-      <nav class="nav-bar" aria-label="Navigation Bar">
-        <a href="#features" class="nav-link-secondary">Features</a>
-        <a href="#pricing" class="nav-link-secondary">Pricing</a>
-        <a href="#calculator" class="nav-link-secondary">Find Your Fit</a>
-        <a href="#register" class="nav-link-primary">Register</a>
+      <nav class="site-nav" aria-label="Navigation Bar">
+        <a href="#features" class="site-nav-link-secondary">Features</a>
+        <a href="#pricing" class="site-nav-link-secondary">Pricing</a>
+        <a href="#calculator" class="site-nav-link-secondary">Find Your Fit</a>
+        <a href="#register" class="site-nav-link-primary">Register</a>
       </nav>
     </header>
+
     <main>
       <!-- HERO -->
       <section id="hero" class="hero-section">
@@ -27,39 +28,43 @@
         <p class="hero-subtitle">
           99.99% Uptime. Less Than 100 ms Average Latency. 10M+ Logs per Day.
         </p>
-        <div class="cta-group">
+        <div class="hero-cta-group">
           <a href="#register" class="btn-primary">Deploy Free Cluster</a>
           <a href="#pricing" class="btn-secondary">View Pricing</a>
         </div>
       </section>
       <!-- END HERO -->
+
       <!-- FEATURES -->
       <section id="features" class="section-container">
         <header class="section-header">
           <h2 class="section-title">Platform Capabilities</h2>
           <p class="section-subtitle">Infrastructure Features Overview</p>
         </header>
+
         <div class="feature-matrix">
-          <article class="feature-matrix-card">
+          <article class="feature-card">
             <div class="feature-icon">&#128907;</div>
             <h3 class="feature-title">Latency Tracking</h3>
-            <p class="feature-subtitle">
+            <p class="feature-description">
               Monitor response times across infrastructure to identify slowdowns
               and performance issues.
             </p>
           </article>
-          <article class="feature-matrix-card">
+
+          <article class="feature-card">
             <div class="feature-icon">&#128196;</div>
             <h3 class="feature-title">Log Aggregation</h3>
-            <p class="feature-subtitle">
+            <p class="feature-description">
               Collect and centralize system logs from multiple sources for
               easier monitoring and troubleshooting.
             </p>
           </article>
-          <article class="feature-matrix-card">
+
+          <article class="feature-card">
             <div class="feature-icon">&#128295;</div>
             <h3 class="feature-title">Auto-Remediation</h3>
-            <p class="feature-subtitle">
+            <p class="feature-description">
               Automatically detect common infrastructure issues and trigger
               corrective actions to reduce downtime.
             </p>
@@ -67,75 +72,98 @@
         </div>
       </section>
       <!-- END FEATURES -->
+
       <!-- PRICING -->
       <section id="pricing" class="section-container">
         <header class="section-header">
           <h2 class="section-title">Tier Comparison</h2>
-          <p class="section-subtitle">Choose from 3 distinct tiers</p>
+          <p class="section-subtitle">Choose from three distinct tiers</p>
         </header>
+
         <div class="pricing-matrix">
-          <article class="pricing-matrix-card">
-            <h3 class="tier-name">Developer</h3>
-            <p class="tier-desc">Developer desc</p>
-            <div class="tier-price">
-              <span class="price-num">$49</span>
-              <span class="price-time">Monthly</span>
+          <article class="pricing-card">
+            <h3 class="pricing-tier-name">Developer</h3>
+            <p class="pricing-tier-description">
+              Essential infrastructure tools for individual developers and
+              smaller workloads.
+            </p>
+
+            <div class="pricing-tier-price">
+              <span class="pricing-price-value">$49</span>
+              <span class="pricing-price-period">Monthly</span>
             </div>
-            <ul class="tier-features">
+
+            <ul class="pricing-tier-features">
               <li>Feature #1</li>
               <li>Feature #2</li>
               <li>Feature #3</li>
             </ul>
-            <a href="#register" class="btn tier-secondary">
-              Select Developer
-            </a>
+
+            <a href="#register" class="btn-secondary"> Select Developer </a>
           </article>
-          <article class="pricing-matrix-card">
-            <div class="popular-tier">Most Popular</div>
-            <h3 class="tier-name">Pro Cluster</h3>
-            <p class="tier-desc">Pro Cluster desc</p>
-            <div class="tier-price">
-              <span class="price-num">$99</span>
-              <span class="price-time">Monthly</span>
+
+          <article class="pricing-card">
+            <div class="pricing-popular-label">Most Popular</div>
+            <h3 class="pricing-tier-name">Pro Cluster</h3>
+            <p class="pricing-tier-description">
+              Expanded performance and monitoring capabilities for growing
+              production workloads.
+            </p>
+
+            <div class="pricing-tier-price">
+              <span class="pricing-price-value">$99</span>
+              <span class="pricing-price-period">Monthly</span>
             </div>
-            <ul class="tier-features">
+
+            <ul class="pricing-tier-features">
               <li>Feature #1</li>
               <li>Feature #2</li>
               <li>Feature #3</li>
             </ul>
-            <a href="#register" class="btn tier-primary">
-              Select Pro Cluster
-            </a>
+
+            <a href="#register" class="btn-primary"> Select Pro Cluster </a>
           </article>
-          <article class="pricing-matrix-card">
-            <h3 class="tier-name">Enterprise Dedicated</h3>
-            <p class="tier-desc">Enterprise Dedicated desc</p>
-            <div class="tier-price">
-              <span class="price-num">Custom</span>
+
+          <article class="pricing-card">
+            <h3 class="pricing-tier-name">Enterprise Dedicated</h3>
+            <p class="pricing-tier-description">
+              Dedicated infrastructure designed for large-scale and specialized
+              enterprise workloads.
+            </p>
+
+            <div class="pricing-tier-price">
+              <span class="pricing-price-value">Custom</span>
             </div>
-            <ul class="tier-features">
+
+            <ul class="pricing-tier-features">
               <li>Feature #1</li>
               <li>Feature #2</li>
               <li>Feature #3</li>
             </ul>
-            <a href="#register" class="btn tier-secondary">
+
+            <a href="#register" class="btn-secondary">
               Select Enterprise Dedicated
             </a>
           </article>
         </div>
       </section>
       <!-- END PRICING -->
+
       <!-- CALCULATOR -->
       <section id="calculator" class="section-container">
         <header class="section-header">
           <h2 class="section-title">Workload Estimator</h2>
-          <p class="section-subtitle"></p>
+          <p class="section-subtitle">
+            Estimate which infrastructure tier best supports your workload.
+          </p>
         </header>
+
         <form action="#" method="post" class="section-form">
           <div class="form-panel">
-            <label for="node-count" class="form-label"
-              >Node Count<span class="required-mark">*</span></label
-            >
+            <label for="node-count" class="form-label">
+              Node Count<span class="form-required-mark">*</span>
+            </label>
+
             <input
               type="number"
               name="node-count"
@@ -147,13 +175,15 @@
               placeholder="5000"
               required
             />
-            <span class="input-desc">Min: 100 | Max: 10000</span>
+
+            <span class="form-input-description">Min: 100 | Max: 10000</span>
           </div>
 
           <div class="form-panel">
-            <label for="log-throughput" class="form-label"
-              >Log Throughput<span class="required-mark">*</span></label
-            >
+            <label for="log-throughput" class="form-label">
+              Log Throughput<span class="form-required-mark">*</span>
+            </label>
+
             <input
               type="number"
               name="log-throughput"
@@ -165,37 +195,45 @@
               placeholder="5000"
               required
             />
-            <span class="input-desc">Min: 100 | Max: 10000</span>
+
+            <span class="form-input-description">Min: 100 | Max: 10000</span>
           </div>
 
           <div class="form-panel">
-            <label for="target-tier" class="form-label"
-              >Target Tier<span class="required-mark">*</span></label
-            >
-            <select name="target-tier" id="target-tier" class="form-label">
+            <label for="target-tier" class="form-label">
+              Target Tier<span class="form-required-mark">*</span>
+            </label>
+
+            <select name="target-tier" id="target-tier" class="form-select">
               <option value="developer">Developer</option>
               <option value="pro-cluster">Pro Cluster</option>
               <option value="enterprise-dedicated">Enterprise Dedicated</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-submit">
+
+          <button type="submit" class="btn-submit">
             Verify Tier Compatibility
           </button>
         </form>
       </section>
       <!-- END CALCULATOR -->
+
       <!-- REGISTER -->
       <section id="register" class="section-container">
         <header class="section-header">
           <h2 class="section-title">Request API Sandbox Access</h2>
-          <p class="section-subtitle">API Sandbox Provisioning Description</p>
+          <p class="section-subtitle">
+            Submit your information to receive API sandbox provisioning details.
+          </p>
         </header>
+
         <form action="#" method="post" class="section-form">
           <div class="form-panel">
-            <label for="operator-name" class="form-label"
-              >Operator Name
-              <span class="required-mark">*</span>
+            <label for="operator-name" class="form-label">
+              Operator Name
+              <span class="form-required-mark">*</span>
             </label>
+
             <input
               type="text"
               name="operator-name"
@@ -207,10 +245,11 @@
           </div>
 
           <div class="form-panel">
-            <label for="operator-email" class="form-label"
-              >Operator Email
-              <span class="required-mark">*</span>
+            <label for="operator-email" class="form-label">
+              Operator Email
+              <span class="form-required-mark">*</span>
             </label>
+
             <input
               type="email"
               name="operator-email"
@@ -220,16 +259,19 @@
               required
             />
           </div>
-          <button type="submit" class="btn btn-submit">
+
+          <button type="submit" class="btn-submit">
             Request API Sandbox Provisioning Details
           </button>
         </form>
       </section>
       <!-- END REGISTER -->
     </main>
+
     <footer class="site-footer">
       <div class="footer-container">
-        <p class="footer-copright">&copy; 2026 DevPulse Technologies Inc.</p>
+        <p class="footer-copyright">&copy; 2026 DevPulse Technologies Inc.</p>
+
         <nav class="footer-nav" aria-label="Footer Navigation">
           <a href="#hero">Back to Top</a>
           <a href="#features">Features</a>
