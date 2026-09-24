@@ -161,7 +161,8 @@
         <form action="#" method="post" class="section-form">
           <div class="form-panel">
             <label for="node-count" class="form-label">
-              Node Count<span class="form-required-mark">*</span>
+              <span class="form-required-mark"> *</span>
+              Node Count
             </label>
 
             <input
@@ -181,7 +182,8 @@
 
           <div class="form-panel">
             <label for="log-throughput" class="form-label">
-              Log Throughput<span class="form-required-mark">*</span>
+              <span class="form-required-mark"> *</span>
+              Log Throughput
             </label>
 
             <input
@@ -201,7 +203,8 @@
 
           <div class="form-panel">
             <label for="target-tier" class="form-label">
-              Target Tier<span class="form-required-mark">*</span>
+              <span class="form-required-mark"> *</span>
+              Target Tier
             </label>
 
             <select name="target-tier" id="target-tier" class="form-select">
@@ -230,8 +233,8 @@
         <form action="#" method="post" class="section-form">
           <div class="form-panel">
             <label for="operator-name" class="form-label">
+              <span class="form-required-mark"> *</span>
               Operator Name
-              <span class="form-required-mark">*</span>
             </label>
 
             <input
@@ -246,8 +249,8 @@
 
           <div class="form-panel">
             <label for="operator-email" class="form-label">
+              <span class="form-required-mark">* </span>
               Operator Email
-              <span class="form-required-mark">*</span>
             </label>
 
             <input
@@ -257,6 +260,20 @@
               class="form-input"
               placeholder="john.smith@company.com"
               required
+            />
+          </div>
+
+          <div class="form-panel">
+            <label for="operator-phone" class="form-label">
+              Operator Phone Number
+            </label>
+
+            <input
+              type="tel"
+              name="operator-phone"
+              id="operator-phone"
+              class="form-input"
+              placeholder="(876)-123-1234"
             />
           </div>
 
