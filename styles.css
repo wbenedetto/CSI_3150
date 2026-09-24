@@ -417,3 +417,11 @@ html {
 .footer-nav .link:hover {
   color: var(--text-color);
 }
+
+.btn:focus-visible,
+.site-nav a:focus-visible,
+.footer-nav a:focus-visible,
+.form-input:focus-visible,
+.form-select:focus-visible {
+  outline: 3px solid var(--secondary-color);
+}

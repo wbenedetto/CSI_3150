@@ -170,14 +170,14 @@
               name="node-count"
               id="node-count"
               class="form-input"
-              min="100"
-              max="10000"
-              step="50"
-              placeholder="5000"
+              min="1"
+              max="1000"
+              step="1"
+              placeholder="500"
               required
             />
 
-            <span class="form-input-description">Min: 100 | Max: 10000</span>
+            <span class="form-input-description">Min: 1 | Max: 1000</span>
           </div>
 
           <div class="form-panel">
@@ -191,14 +191,14 @@
               name="log-throughput"
               id="log-throughput"
               class="form-input"
-              min="100"
-              max="10000"
-              step="50"
-              placeholder="5000"
+              min="1"
+              max="1000"
+              step="1"
+              placeholder="500"
               required
             />
 
-            <span class="form-input-description">Min: 100 | Max: 10000</span>
+            <span class="form-input-description">Min: 1 | Max: 1000</span>
           </div>
 
           <div class="form-panel">
@@ -207,7 +207,12 @@
               Target Tier
             </label>
 
-            <select name="target-tier" id="target-tier" class="form-select">
+            <select
+              name="target-tier"
+              id="target-tier"
+              class="form-select"
+              required
+            >
               <option value="developer">Developer</option>
               <option value="pro-cluster">Pro Cluster</option>
               <option value="enterprise-dedicated">Enterprise Dedicated</option>
