@@ -13,7 +13,7 @@
   --primary-color-hover: #f58a07;
   --secondary-color: #0094c6;
   --secondary-color-hover: #133c55;
-  --bg-color: #303633;
+  --bg-color: #2d302e;
   --panel-color: #111827;
   --panel-color-hover: #273449;
   --text-color: #eef0f2;
@@ -222,4 +222,83 @@ html {
   margin: 0;
   padding-bottom: 1rem;
   border-bottom: 3px solid var(--secondary-color);
+}
+
+.pricing-matrix {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--panel-color);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  flex: 1;
+  gap: 1.5rem;
+  transition:
+    transform var(--transition-speed),
+    background-color var(--transition-speed);
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  background-color: var(--panel-color-hover);
+}
+
+.pricing-card-popular {
+  outline: 3px solid var(--primary-color);
+}
+
+.pricing-popular-label {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.pricing-tier-name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.pricing-tier-description {
+  max-width: 45ch;
+}
+
+.pricing-tier-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.pricing-price-value {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.pricing-price-period {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.pricing-tier-features {
+  list-style: none;
+  width: 100%;
+}
+
+.pricing-tier-features li {
+  padding: 0.85rem 0;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.pricing-tier-features li:last-child {
+  border-bottom: none;
 }
