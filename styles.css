@@ -387,3 +387,33 @@ html {
   background-color: var(--primary-color-hover);
   transform: translateY(-3px);
 }
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(9, 13, 25, 0.9);
+}
+
+.footer-copyright {
+  color: var(--text-color-hover);
+  font-weight: 300;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  color: var(--text-color-hover);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.footer-nav .link {
+  transition: color var(--transition-speed);
+}
+
+.footer-nav .link:hover {
+  color: var(--text-color);
+}
